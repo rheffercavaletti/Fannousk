@@ -34,29 +34,36 @@ int main()
     printf("\nPedido: ");
     scanf("%d", &op);
 
-     if (op==0){
+    switch(op) {
+	case 0 :   
         printf("\tCalculando o Total");
-    }else if (op==1){
+    break;
+	case 1 :
         printf("Cachorro Quente\n");
         hotdog=(hotdog+1);
         thot=(1.50*hotdog);
-    }else if (op==2){
+    break;
+	case 2 :
         printf("Hamburguer\n");
         hamburguer=(hamburguer+1);
         tham=(2.00*hamburguer);
-    } else if (op==3){
+    break; 
+	case 3 :
         printf("Cheeseburguer\n");
         cheeseburguer=(cheeseburguer+1);
         tcheese=(2.50*cheeseburguer);
-    } else if (op==4){
+    break; 
+	case 4 :
         printf("Eggcheeseburguer\n");
         eggburguer=(eggburguer+1);
         tegg=(3.00*eggburguer);
-    } else if (op==5){
+    break; 
+	case 5 :
         printf("Refrigerante\n");
         refri=(refri+1);
         trefri=(1.50*refri);
-    } else{
+    break; 
+	default : 
         printf("\tOpção Inválida\n");
     }
     }
